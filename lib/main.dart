@@ -88,7 +88,12 @@ class _HomePageState extends State<HomePage> {
                  Text ("Last Orders",
                    style: TextStyle (fontSize: 23, fontWeight: FontWeight.bold),
                  ),
-                 arTxt,
+                 Row (
+                   children: <Widget>[
+                    Text ('View All', style: TextStyle(color: Colors.black),),
+                    Icon (Icons.arrow_forward_ios, size: 13, color: Colors.black,),
+               ],
+             ),
                ],
              ),
            ),
