@@ -45,16 +45,10 @@ class _HomePageState extends State<HomePage> {
              ),
            ),
 
-           Container(
-             child: Padding(
-               padding: const EdgeInsets.only(left: 18.0, bottom: 37.0, top: 5.0),
-               child: Row (
-                 children: <Widget>[
-                   Text ("The ReFex \nChoice",
-                   style: TextStyle (fontSize: 25, fontWeight: FontWeight.bold),
-                   ),
-                 ],
-               ),
+           Padding(
+             padding: const EdgeInsets.only(right: 245.0, bottom: 37.0, top: 5.0),
+             child: Text ("The ReFex \nChoice",
+             style: TextStyle (fontSize: 25, fontWeight: FontWeight.bold),
              ),
            ),
 
@@ -75,12 +69,12 @@ class _HomePageState extends State<HomePage> {
                  Expanded (child: Text ("ROTARI BRUT", style: TextStyle (fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),),),
                  Expanded (child: Text ("Wine Type: Rose Brut", style: TextStyle (fontWeight: FontWeight.normal, color: Colors.white),),),
                  Expanded (child: Text ("Quantity: 15L", style: TextStyle (fontWeight: FontWeight.normal, color: Colors.white),),),
-                 Expanded (child: RaisedButton(  textColor: Colors.black,
+                 Expanded (child: FlatButton(  textColor: Colors.black,
                    color: Colors.white,
                    child: Text(r"$" + "11.97", style: TextStyle(fontWeight: FontWeight.bold),),
                    onPressed: () {},
                    shape: RoundedRectangleBorder(
-                     borderRadius: BorderRadius.circular(30.0),
+                     borderRadius: BorderRadius.circular(28.0),
                    ),),),
                ],
              ),
@@ -100,7 +94,7 @@ class _HomePageState extends State<HomePage> {
            ),
 
            Container (
-             padding: EdgeInsets.only(left: 8.0),
+             padding: EdgeInsets.only(left: 15.0),
              height: 180,
 
              child: ListView (
