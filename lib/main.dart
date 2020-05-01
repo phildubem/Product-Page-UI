@@ -193,7 +193,7 @@ class _HomePageState extends State<HomePage> {
                  Container(
                    padding: EdgeInsets.only(top: 118.0),
                    width: 135.0,
-                   margin: EdgeInsets.only(right: 15.0),
+                   margin: EdgeInsets.only(right: 13.0),
                    decoration: BoxDecoration(
                      color: Color(0xFF04575D),
                      borderRadius: BorderRadius.circular(15),
