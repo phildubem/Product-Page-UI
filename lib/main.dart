@@ -118,7 +118,6 @@ class _HomePageState extends State<HomePage> {
                          Padding(
                            padding: const EdgeInsets.only(bottom: 34.0),
                            child: Container (
-                             height: double.infinity,
                              child: Column (
                              children: <Widget>[
                                Image.asset('images/winebb.png'),
