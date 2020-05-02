@@ -34,7 +34,7 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: Colors.white,
 
      body: Container(
-       padding: EdgeInsets.only(left: 4.0, top: 25.0),
+       padding: EdgeInsets.only(left: 4.0, top: 20.0),
        child: Column (
          children: <Widget>[
            Padding(
@@ -46,7 +46,7 @@ class _HomePageState extends State<HomePage> {
            ),
 
            Padding(
-             padding: const EdgeInsets.only(right: 245.0, bottom: 37.0, top: 5.0),
+             padding: const EdgeInsets.only(right: 245.0, bottom: 35.0, top: 4.0),
              child: Text ("The ReFex \nChoice",
              style: TextStyle (fontSize: 25, fontWeight: FontWeight.bold),
              ),
@@ -81,7 +81,7 @@ class _HomePageState extends State<HomePage> {
            ),
 
            Container(
-             padding: EdgeInsets.only(left: 18.0, right: 18.0, top: 25.0, bottom: 55.0),
+             padding: EdgeInsets.only(left: 18.0, right: 18.0, top: 25.0, bottom: 50.0),
              child: Row (
                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                children: <Widget>[
@@ -228,9 +228,7 @@ class _HomePageState extends State<HomePage> {
                ],
              ),
            ),
-           SizedBox (
-             height: 20.0,
-           ),
+           SizedBox (height: 30.0,),
            Container(
              padding: EdgeInsets.only(left: 20.0, right: 20.0),
              child: Row (
