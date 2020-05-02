@@ -92,8 +92,8 @@ class _HomePageState extends State<HomePage> {
                    children: <Widget>[
                     Text ('View All', style: TextStyle(color: Colors.black),),
                     Icon (Icons.arrow_forward_ios, size: 13, color: Colors.black,),
-               ],
-             ),
+                  ],
+                ),
                ],
              ),
            ),
@@ -106,24 +106,38 @@ class _HomePageState extends State<HomePage> {
                scrollDirection: Axis.horizontal,
                children: <Widget>[
                  Container(
-                   padding: EdgeInsets.only(top: 118.0),
+                   padding: EdgeInsets.only(bottom: 6.0),
                    width: 135.0,
                    margin: EdgeInsets.only(right: 20.0),
                    decoration: BoxDecoration(
                      color: Color(0xFFD28D92),
                      borderRadius: BorderRadius.circular(15),
                    ),
-                   child: Column (
-                     crossAxisAlignment: CrossAxisAlignment.center,
-                     children: <Widget>[
-                       Column (
-                         crossAxisAlignment: CrossAxisAlignment.start,
-                         children: <Widget>[
-                           Text ("Rotari Pink", style: TextStyle (fontSize: 15, fontWeight: FontWeight.bold, color: Colors.white)),
-                           Text (r"$ " + "11.80", style: TextStyle (color: Colors.white)),
-                         ],
-                       ),
-                     ],
+                   child: Stack(
+                       children: <Widget>[
+                         Padding(
+                           padding: const EdgeInsets.only(bottom: 34.0),
+                           child: Container (
+                             height: double.infinity,
+                             child: Column (
+                             children: <Widget>[
+                               Image.asset('images/winebb.png'),
+                             ],
+                            ),
+                           ),
+                         ),
+                         Padding(
+                           padding: const EdgeInsets.only(top: 135.0, left: 15.0),
+                           child: Column (
+                             crossAxisAlignment: CrossAxisAlignment.start,
+                             children: <Widget>[
+                               Text ("Rotari Pink", style: TextStyle (fontSize: 15, fontWeight: FontWeight.bold, color: Colors.white)),
+                               Text (r"$ " + "11.80", style: TextStyle (color: Colors.white)),
+                             ],
+                           ),
+                         ),
+                       ],
+
                    ),
                  ),
                  Container(
@@ -182,6 +196,7 @@ class _HomePageState extends State<HomePage> {
                        Column (
                          crossAxisAlignment: CrossAxisAlignment.start,
                          children: <Widget>[
+                           Image.asset('images/winebb.png'),
                            Text ("Rotari Purple", style: TextStyle (fontSize: 15, fontWeight: FontWeight.bold, color: Colors.white)),
                            Text (r"$ " + "12.90", style: TextStyle (color: Colors.white)),
                          ],
@@ -210,6 +225,21 @@ class _HomePageState extends State<HomePage> {
                      ],
                    ),
                  ),
+               ],
+             ),
+           ),
+           SizedBox (
+             height: 20.0,
+           ),
+           Container(
+             padding: EdgeInsets.only(left: 20.0, right: 20.0),
+             child: Row (
+               mainAxisAlignment: MainAxisAlignment.spaceBetween,
+               children: [
+                 Icon(Icons.home, size: 30.0),
+                 Icon(Icons.shopping_basket,  size: 30.0),
+                 Icon(Icons.favorite_border, size: 30.0),
+                 Icon(Icons.person_outline, size: 30.0)
                ],
              ),
            ),
